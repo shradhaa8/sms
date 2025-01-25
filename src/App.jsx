@@ -5,6 +5,10 @@ import AdminDashboard from './pages/AdminDashboard';
 import Details from './components/Dashboard/Details';
 import StudentList from './components/Dashboard/Student/StudentList';
 import AddStudent from './components/Dashboard/Student/AddStudent';
+import UpdateStudent from './components/Dashboard/Student/UpdateStudent';
+import ViewStudent from './components/Dashboard/Student/VIewStudent';
+
+
 function App() {
 
   return (
@@ -19,6 +23,8 @@ function App() {
 
       <Route path='/admin-dashboard/students' element={<StudentList/>}></Route>
       <Route path='/admin-dashboard/addstudent' element={<AddStudent />}></Route>
+      <Route path='/admin-dashboard/student/:id' element={<UpdateStudent />}></Route>
+      <Route path='/admin-dashboard/student/:id' element={<ViewStudent/>}></Route>
       </Route>
       </Routes></BrowserRouter>
   )
