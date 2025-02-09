@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const Mongo_URI ="mongodb+srv://shradhaarajbhandari:1234sass@studentcluster.yks3g.mongodb.net/studentDB?retryWrites=true&w=majority&appName=studentcluster"
+const Mongo_URI ="mongodb://localhost:27017/student"
 const dbConnect =()=>{
     mongoose.connect(Mongo_URI)
     .then(()=>{
